@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>BDEB02BB-B99C-4973-BF27-FC14119809DD</UUID>
-        <nextObjectID>163</nextObjectID>
+        <nextObjectID>168</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -54,7 +54,7 @@
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
     </object>
     <object type="LIST" id="z103">
-        <attribute name="sort" type="int16">1</attribute>
+        <attribute name="sort" type="int16">2</attribute>
         <attribute name="name" type="string">Symfony</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
@@ -123,12 +123,12 @@ LCAnX19uYW1lX18nLCAnaGVpZ2h0PV9fMjAwX18sd2lkdGg9X18xNTBfXycpOwogIAogIGlmICh3aW5k
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z114 z111"></relationship>
     </object>
     <object type="LIST" id="z113">
-        <attribute name="sort" type="int16">2</attribute>
+        <attribute name="sort" type="int16">3</attribute>
         <attribute name="name" type="string">JavaScript</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z114 z111"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z111 z114"></relationship>
     </object>
     <object type="SNIPPET" id="z114">
         <attribute name="name" type="string">Refresh window</attribute>
@@ -162,12 +162,12 @@ LCAnX19uYW1lX18nLCAnaGVpZ2h0PV9fMjAwX18sd2lkdGg9X18xNTBfXycpOwogIAogIGlmICh3aW5k
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z145 z124"></relationship>
     </object>
     <object type="LIST" id="z118">
-        <attribute name="sort" type="int16">3</attribute>
+        <attribute name="sort" type="int16">4</attribute>
         <attribute name="name" type="string">Cocoa</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z119 z144 z120 z129 z117 z163 z143 z136 z153 z123 z116 z128 z161"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z120 z128 z116 z119 z123 z117 z161 z129 z163 z136 z144 z143 z153"></relationship>
     </object>
     <object type="SNIPPET" id="z119">
         <attribute name="name" type="string">Template for dispatch_after</attribute>
@@ -472,5 +472,37 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
         <relationship name="list" type="1/1" destination="LIST" idrefs="z118"></relationship>
         <relationship name="assets" type="0/0" destination="ASSET" idrefs="z131"></relationship>
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z154 z151"></relationship>
+    </object>
+    <object type="LIST" id="z164">
+        <attribute name="sort" type="int16">1</attribute>
+        <attribute name="name" type="string">Dev</attribute>
+        <attribute name="expanded" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="FOLDER"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
+    </object>
+    <object type="ASSET" id="z165">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">script.sh</attribute>
+        <attribute name="content" type="binary">bXZuIGludGVncmF0aW9uLXRlc3QgLURsb2NhbC1kZXBsb3k9dHJ1ZSAtRGxvY2FsLXJ1bi1zY2Vu
+YXJpb3M9dHJ1ZSAtRHNraXBUZXN0cz10cnVlIC1Ec2VsZW5pdW0ucmNfdHlwZT1zYWZhcmkgLURza2lwQ2FjaGVCdXN0ZXI9dHJ1ZSAtRGFzc2VtYmx5LnNraXBBc3NlbWJseT10cnVlIC1Ec2VsZW5pdW0uc2NlbmFyaW89X19TY2VuYXJpb19fIC1v
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z166"></relationship>
+    </object>
+    <object type="SNIPPET" id="z166">
+        <attribute name="name" type="string">integration@Run integration tests</attribute>
+        <attribute name="modified" type="date">343573322.45048701763153076172</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST" idrefs="z164"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z165"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z167 z168"></relationship>
+    </object>
+    <object type="TAG" id="z167">
+        <attribute name="name" type="string">Test</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
+    </object>
+    <object type="TAG" id="z168">
+        <attribute name="name" type="string">Maven</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
     </object>
 </database>
