@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>BDEB02BB-B99C-4973-BF27-FC14119809DD</UUID>
-        <nextObjectID>168</nextObjectID>
+        <nextObjectID>171</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -479,7 +479,7 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169 z166"></relationship>
     </object>
     <object type="ASSET" id="z165">
         <attribute name="sort" type="int32">-1</attribute>
@@ -499,10 +499,31 @@ YXJpb3M9dHJ1ZSAtRHNraXBUZXN0cz10cnVlIC1Ec2VsZW5pdW0ucmNfdHlwZT1zYWZhcmkgLURza2lw
     </object>
     <object type="TAG" id="z167">
         <attribute name="name" type="string">Test</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169 z166"></relationship>
     </object>
     <object type="TAG" id="z168">
         <attribute name="name" type="string">Maven</attribute>
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166"></relationship>
+    </object>
+    <object type="SNIPPET" id="z169">
+        <attribute name="name" type="string">Disable jbehave stories</attribute>
+        <attribute name="modified" type="date">343621457.98556798696517944336</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST" idrefs="z164"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z170"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z167 z171"></relationship>
+    </object>
+    <object type="ASSET" id="z170">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">script.txt</attribute>
+        <attribute name="content" type="binary">TWV0YToKQGNhdGVnb3J5IGRpc2FibGVkClNjZW5hcmlvIC4uLgoKCiMgQW5kIHRoZW4uLgoKYWRk
+IHRoZSBkaXNhYmxlZCB0ZXN0IHRvIGh0dHBzOi8vd2lraS5uZ2Uud2RpZy5jb20vZGlzcGxheS9OR0UvRGlzYWJsZWQrVGVzdHM=
+</attribute>
+        <attribute name="uti" type="string">com.codebox.content.syntax.none</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z169"></relationship>
+    </object>
+    <object type="TAG" id="z171">
+        <attribute name="name" type="string">jbehave</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169"></relationship>
     </object>
 </database>
