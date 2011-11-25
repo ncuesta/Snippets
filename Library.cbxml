@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>BDEB02BB-B99C-4973-BF27-FC14119809DD</UUID>
-        <nextObjectID>171</nextObjectID>
+        <nextObjectID>175</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -479,7 +479,7 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169 z166"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169 z166 z175"></relationship>
     </object>
     <object type="ASSET" id="z165">
         <attribute name="sort" type="int32">-1</attribute>
@@ -525,5 +525,29 @@ IHRoZSBkaXNhYmxlZCB0ZXN0IHRvIGh0dHBzOi8vd2lraS5uZ2Uud2RpZy5jb20vZGlzcGxheS9OR0Uv
     <object type="TAG" id="z171">
         <attribute name="name" type="string">jbehave</attribute>
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169"></relationship>
+    </object>
+    <object type="TAG" id="z172">
+        <attribute name="name" type="string">Performance</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z175"></relationship>
+    </object>
+    <object type="ASSET" id="z173">
+        <attribute name="sort" type="int32">0</attribute>
+        <attribute name="path" type="string">script.php</attribute>
+        <attribute name="content" type="binary">PD9waHAKCi8qKiBSb3VnaCB0aW1pbmcgY29tcGFyaXNvbiBiZXR3ZWVuIGRpZmZlcmVudCBzdHJp
+bmcgY29uY2F0ZW5hdGlvbiBtZXRob2RzLiAqKi8KCiRhID0gJGIgPSAkYyA9ICdBQkMxMjMnOwokaXRlcmF0aW9ucyA9IDEwMDAwMDA7CgplY2hvICIkaXRlcmF0aW9ucyBpdGVyYXRpb25zIC0tIGNvbmNhdGVuYXRpb24gb2YgJyRhIGFuZCAkYiB3ZW50IG91dCB0byBzZWUgJGMnXG5cbiI7CgokdCA9IHhkZWJ1Z190aW1lX2luZGV4KCk7CmZvciAoJGkgPSAkaXRlcmF0aW9uczsgJGkgPiAwOyAkaS0tKSB7CiAgICAkbmV3c3RyaW5nID0gIiRhIGFuZCAkYiB3ZW50IG91dCB0byBzZWUgJGMiOwp9CiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKSAtICR0OwplY2hvICdhbGwgaW5zaWRlICIgOiAgICAgICAgICAgICcsICR0LCAiXG4iOwoKJHQgPSB4ZGVidWdfdGltZV9pbmRleCgpOwpmb3IgKCRpID0gJGl0ZXJhdGlvbnM7ICRpID4gMDsgJGktLSkgewogICAgJG5ld3N0cmluZyA9ICRhIC4gIiBhbmQgIiAuICRiIC4gIiB3ZW50IG91dCB0byBzZWUgIiAuICRjOwp9CiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKSAtICR0OwplY2hvICdzcGxpdCB1cCB1c2luZyAiIDogICAgICAgICcsICR0LCAiXG4iOwoKJHQgPSB4ZGVidWdfdGltZV9pbmRleCgpOwpmb3IgKCRpID0gJGl0ZXJhdGlvbnM7ICRpID4gMDsgJGktLSkgewogICAgJG5ld3N0cmluZyA9ICRhIC4gJyBhbmQgJyAuICRiIC4gJyB3ZW50IG91dCB0byBzZWUgJyAuICRjOwp9CiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKSAtICR0OwplY2hvICdzcGxpdCB1cCB1c2luZyBcJyA6ICAgICAgICAnLCAkdCwgIlxuIjsKCiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKTsKZm9yICgkaSA9ICRpdGVyYXRpb25zOyAkaSA+IDA7ICRpLS0pIHsKICAgICRuZXdzdHJpbmcgPSAkYTsKICAgICRuZXdzdHJpbmcgLj0gJyBhbmQgJzsKICAgICRuZXdzdHJpbmcgLj0gJGI7CiAgICAkbmV3c3RyaW5nIC49ICcgd2VudCBvdXQgdG8gc2VlICc7CiAgICAkbmV3c3RyaW5nIC49ICRjOwp9CiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKSAtICR0OwplY2hvICdzcGxpdCB1cCB1c2luZyAuPSBhbmQgXCcgOiAnLCAkdCwgIlxuIjsKCiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKTsKZm9yICgkaSA9ICRpdGVyYXRpb25zOyAkaSA+IDA7ICRpLS0pIHsKICAgICRuZXdzdHJpbmcgPSAkYTsKICAgICRuZXdzdHJpbmcgLj0gIiBhbmQgIjsKICAgICRuZXdzdHJpbmcgLj0gJGI7CiAgICAkbmV3c3RyaW5nIC49ICIgd2VudCBvdXQgdG8gc2VlICI7CiAgICAkbmV3c3RyaW5nIC49ICRjOwp9CiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKSAtICR0OwplY2hvICdzcGxpdCB1cCB1c2luZyAuPSBhbmQgIiA6ICcsICR0LCAiXG4iOwoKJHQgPSB4ZGVidWdfdGltZV9pbmRleCgpOwpmb3IgKCRpID0gJGl0ZXJhdGlvbnM7ICRpID4gMDsgJGktLSkgewogICAgJG5ld3N0cmluZyA9IHN0cnRyKCclYSBhbmQgJWIgd2VudCBvdXQgdG8gc2VlICVjJywgYXJyYXkoJyVhJyA9PiAkYSwgJyViJyA9PiAkYiwgJyVjJyA9PiAkYykpOwp9CiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKSAtICR0OwplY2hvICd1c2luZyBzdHJ0cigpIDogICAgICAgICAgICcsICR0LCAiXG4iOwoKJHQgPSB4ZGVidWdfdGltZV9pbmRleCgpOwpmb3IgKCRpID0gJGl0ZXJhdGlvbnM7ICRpID4gMDsgJGktLSkgewogICAgJG5ld3N0cmluZyA9IHNwcmludGYoJyVzIGFuZCAlcyB3ZW50IG91dCB0byBzZWUgJXMnLCAkYSwgJGIsICRjKTsKfQokdCA9IHhkZWJ1Z190aW1lX2luZGV4KCkgLSAkdDsKZWNobyAndXNpbmcgc3ByaW50ZigpIDogICAgICAgICAnLCAkdCwgIlxuIjsKCiR0ID0geGRlYnVnX3RpbWVfaW5kZXgoKTsKZm9yICgkaSA9ICRpdGVyYXRpb25zOyAkaSA+IDA7ICRpLS0pIHsKICAgICRuZXdzdHJpbmcgPSA8PDxIVE1MCiRhIGFuZCAkYiB3ZW50IG91dCB0byBzZWUgJGMKSFRNTDsKfQokdCA9IHhkZWJ1Z190aW1lX2luZGV4KCkgLSAkdDsKZWNobyAndXNpbmcgSEVSRURPQyA6ICAgICAgICAgICAnLCAkdCwgIlxuIjsK
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z175"></relationship>
+    </object>
+    <object type="TAG" id="z174">
+        <attribute name="name" type="string">Profiling</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z175"></relationship>
+    </object>
+    <object type="SNIPPET" id="z175">
+        <attribute name="name" type="string">String concatenation profiling</attribute>
+        <attribute name="modified" type="date">343939562.57852697372436523438</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST" idrefs="z164"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z173"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z174 z172"></relationship>
     </object>
 </database>
