@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>BDEB02BB-B99C-4973-BF27-FC14119809DD</UUID>
-        <nextObjectID>175</nextObjectID>
+        <nextObjectID>181</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -479,7 +479,7 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z169 z166 z175"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166 z169 z180 z175 z178"></relationship>
     </object>
     <object type="ASSET" id="z165">
         <attribute name="sort" type="int32">-1</attribute>
@@ -549,5 +549,46 @@ bmcgY29uY2F0ZW5hdGlvbiBtZXRob2RzLiAqKi8KCiRhID0gJGIgPSAkYyA9ICdBQkMxMjMnOwokaXRl
         <relationship name="list" type="1/1" destination="LIST" idrefs="z164"></relationship>
         <relationship name="assets" type="0/0" destination="ASSET" idrefs="z173"></relationship>
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z174 z172"></relationship>
+    </object>
+    <object type="TAG" id="z176">
+        <attribute name="name" type="string">SSH</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z178"></relationship>
+    </object>
+    <object type="ASSET" id="z177">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">script.sh</attribute>
+        <attribute name="content" type="binary">Y2F0IH4vLnNzaC9pZF9yc2EucHViIHwgc3NoIF9fdXNlcl9fQF9fcmVtb3RlX18gJ2NhdCA+PiAu
+c3NoL2F1dGhvcml6ZWRfa2V5cyc=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z178"></relationship>
+    </object>
+    <object type="SNIPPET" id="z178">
+        <attribute name="name" type="string">Passwordless SSH</attribute>
+        <attribute name="modified" type="date">344037399.37685102224349975586</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST" idrefs="z164"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z177"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z176"></relationship>
+    </object>
+    <object type="ASSET" id="z179">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">script.sh</attribute>
+        <attribute name="notes" type="string">Parse a CSV file ommitting the header and print the 8th field on it.</attribute>
+        <attribute name="content" type="binary">YXdrIC1GLCAnQkVHSU4ge3g9MX07IHsgaWYgKHggPiAxKSBwcmludCAkODsgeCsrOyB9JyBfX3R5
+cGVfXy5jc3Y=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z180"></relationship>
+    </object>
+    <object type="SNIPPET" id="z180">
+        <attribute name="name" type="string">awk -F, 'BEGIN {x=1}; { if (x \u3e00 1) print $8; x++; }' recreations.csv</attribute>
+        <attribute name="modified" type="date">344355651.64347702264785766602</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST" idrefs="z164"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z179"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z181"></relationship>
+    </object>
+    <object type="TAG" id="z181">
+        <attribute name="name" type="string">awk</attribute>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z180"></relationship>
     </object>
 </database>
