@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>BDEB02BB-B99C-4973-BF27-FC14119809DD</UUID>
-        <nextObjectID>181</nextObjectID>
+        <nextObjectID>184</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -54,7 +54,7 @@
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
     </object>
     <object type="LIST" id="z103">
-        <attribute name="sort" type="int16">2</attribute>
+        <attribute name="sort" type="int16">3</attribute>
         <attribute name="name" type="string">Symfony</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
@@ -123,7 +123,7 @@ LCAnX19uYW1lX18nLCAnaGVpZ2h0PV9fMjAwX18sd2lkdGg9X18xNTBfXycpOwogIAogIGlmICh3aW5k
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z114 z111"></relationship>
     </object>
     <object type="LIST" id="z113">
-        <attribute name="sort" type="int16">3</attribute>
+        <attribute name="sort" type="int16">4</attribute>
         <attribute name="name" type="string">JavaScript</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
@@ -162,12 +162,12 @@ LCAnX19uYW1lX18nLCAnaGVpZ2h0PV9fMjAwX18sd2lkdGg9X18xNTBfXycpOwogIAogIGlmICh3aW5k
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z145 z124"></relationship>
     </object>
     <object type="LIST" id="z118">
-        <attribute name="sort" type="int16">4</attribute>
+        <attribute name="sort" type="int16">5</attribute>
         <attribute name="name" type="string">Cocoa</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z120 z128 z116 z119 z123 z117 z161 z129 z163 z136 z144 z143 z153"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z129 z128 z120 z153 z117 z136 z161 z144 z119 z116 z163 z123 z143"></relationship>
     </object>
     <object type="SNIPPET" id="z119">
         <attribute name="name" type="string">Template for dispatch_after</attribute>
@@ -418,7 +418,7 @@ bHRzID0gW05TTXV0YWJsZURpY3Rpb25hcnkgZGljdGlvbmFyeVdpdGhDb250ZW50c09mRmlsZTpbW05T
     </object>
     <object type="TAG" id="z155">
         <attribute name="name" type="string">Git</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z129"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z129 z184"></relationship>
     </object>
     <object type="TAG" id="z156">
         <attribute name="name" type="string">Mac</attribute>
@@ -474,12 +474,12 @@ a2dyb3VuZEltYWdlXTsKaWYgKGF2ZXJhZ2VDb2xvcikKewogICAgW3dpbmRvdyBzZXRPcGFxdWU6Tk9d
         <relationship name="tags" type="0/0" destination="TAG" idrefs="z154 z151"></relationship>
     </object>
     <object type="LIST" id="z164">
-        <attribute name="sort" type="int16">1</attribute>
+        <attribute name="sort" type="int16">2</attribute>
         <attribute name="name" type="string">Dev</attribute>
         <attribute name="expanded" type="bool">0</attribute>
         <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
         <relationship name="children" type="0/0" destination="FOLDER"></relationship>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z166 z169 z180 z175 z178"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z175 z180 z166 z178 z169"></relationship>
     </object>
     <object type="ASSET" id="z165">
         <attribute name="sort" type="int32">-1</attribute>
@@ -590,5 +590,30 @@ cGVfXy5jc3Y=
     <object type="TAG" id="z181">
         <attribute name="name" type="string">awk</attribute>
         <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z180"></relationship>
+    </object>
+    <object type="LIST" id="z182">
+        <attribute name="sort" type="int16">1</attribute>
+        <attribute name="name" type="string">Git</attribute>
+        <attribute name="expanded" type="bool">0</attribute>
+        <relationship name="parent" type="1/1" destination="FOLDER"></relationship>
+        <relationship name="children" type="0/0" destination="FOLDER"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z184"></relationship>
+    </object>
+    <object type="ASSET" id="z183">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">script.sh</attribute>
+        <attribute name="notes" type="string">Command for dealing with submodules</attribute>
+        <attribute name="content" type="binary">IyBBZGQgYSBzdWJtb2R1bGUgdG8gYW4gZXhpc3RpbmcgZ2l0IGNsb25lCmdpdCBzdWJtb2R1bGUg
+YWRkIF9fc291cmNlX18gX190YXJnZXRfZGlyZWN0b3J5X18KIyBFeDogZ2l0IHN1Ym1vZHVsZSBhZGQgZ2l0Oi8vZ2l0aHViLmNvbS9zeW1mb255L0NsYXNzTG9hZGVyLmdpdCB2ZW5kb3IvU3ltZm9ueS9Db21wb25lbnQvQ2xhc3NMb2FkZXIKCiMgVXBkYXRlIHN1Ym1vZHVsZXMKZ2l0IHN1Ym1vZHVsZSB1cGRhdGUKCiMgUmVtb3ZlIGFuIGV4aXN0aW5nIHN1Ym1vZHVsZQpnaXQgc3VibW9kdWxlIHJtIF9fdGFyZ2V0X2RpcmVjdG9yeV9f
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z184"></relationship>
+    </object>
+    <object type="SNIPPET" id="z184">
+        <attribute name="name" type="string">Submodules</attribute>
+        <attribute name="modified" type="date">345597162.22597700357437133789</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST" idrefs="z182"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z183"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z155"></relationship>
     </object>
 </database>
