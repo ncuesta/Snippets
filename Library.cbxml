@@ -5,7 +5,7 @@
     <databaseInfo>
         <version>134481920</version>
         <UUID>BDEB02BB-B99C-4973-BF27-FC14119809DD</UUID>
-        <nextObjectID>195</nextObjectID>
+        <nextObjectID>197</nextObjectID>
         <metadata>
             <plist version="1.0">
                 <dict>
@@ -690,10 +690,27 @@ ICAgICAgICAgICAgICAgICMjIwojIyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
     </object>
     <object type="TAG" id="z194">
         <attribute name="name" type="string">fast:commit</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z193"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z193 z196"></relationship>
     </object>
     <object type="TAG" id="z195">
         <attribute name="name" type="string">rake</attribute>
-        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z193"></relationship>
+        <relationship name="snippets" type="0/0" destination="SNIPPET" idrefs="z193 z196"></relationship>
+    </object>
+    <object type="SNIPPET" id="z196">
+        <attribute name="name" type="string">insist-commit [php version]</attribute>
+        <attribute name="modified" type="date">358880642.60134100914001464844</attribute>
+        <attribute name="locked" type="bool">0</attribute>
+        <relationship name="list" type="1/1" destination="LIST"></relationship>
+        <relationship name="assets" type="0/0" destination="ASSET" idrefs="z197"></relationship>
+        <relationship name="tags" type="0/0" destination="TAG" idrefs="z194 z195"></relationship>
+    </object>
+    <object type="ASSET" id="z197">
+        <attribute name="sort" type="int32">-1</attribute>
+        <attribute name="path" type="string">insist-commit.php</attribute>
+        <attribute name="notes" type="string">Insist and insist until you get what you want :)</attribute>
+        <attribute name="content" type="binary">IyEvdXNyL2Jpbi9lbnYgcGhwCjw/cGhwCgovKioKICogSW5zaXN0IG9uIGNvbW1pdHRpbmcgc29t
+ZSBjaGFuZ2VzIHVzaW5nIGZhc3Q6Y29tbWl0LgogKiBUaGlzIHNjcmlwdCB0YWtlcyBhdCBsZWFzdCBvbmUgYXJndW1lbnQ6CiAqICAgKyBUaGUgY2hhbmdlbGlzdCBudW1iZXIuCiAqIE9wdGlvbmFsbHksIHlvdSBtYXkgaW5kaWNhdGUgdGhlIG1heGltdW0gbnVtYmVyIG9mIGF0dGVtcHRzIGRlc2lyZWQuCiAqLwoKLyoqCiAqIE91dHB1dCBhICRtc2cgdG8gc3Rkb3V0LgogKgogKiBAcGFyYW0gc3RyaW5nfGFycmF5ICRtc2cgQSBzdHJpbmcgb3IgYXJyYXkgb2Ygc3RyaW5ncyB0byBvdXRwdXQuCiAqLwpmdW5jdGlvbiBvdXRwdXQoJG1zZykgewogICAgaWYgKGlzX2FycmF5KCRtc2cpKSB7CiAgICAgICAgJG1zZyA9IGltcGxvZGUoIlxuIiwgJG1zZyk7CiAgICB9CgogICAgZWNobyAiJG1zZ1xuIjsKfQoKLyoqCiAqIFJ1biBhIGNvbW1hbmQgc3RyaW5nIGFuZCByZXR1cm4gaXRzIGV4aXQgY29kZS4KICoKICogQHBhcmFtIHN0cmluZyAkY29tbWFuZCBUaGUgY29tbWFuZCB0byBydW4uCiAqCiAqIEByZXR1cm4gaW50CiAqLwpmdW5jdGlvbiBydW4oJGNvbW1hbmQpIHsKICAgIHN5c3RlbSgkY29tbWFuZCwgJGV4aXRDb2RlKTsKICAgIHJldHVybiAkZXhpdENvZGU7Cn0KCiRhcmdzdiA9IGFycmF5X3NsaWNlKCRhcmd2LCAxKTsKJGFyZ3NjID0gY291bnQoJGFyZ3N2KTsKCi8vIENoZWNrIHJlcXVpcmVkIGFyZwppZiAoJGFyZ3NjID09PSAwKSB7CiAgICBvdXRwdXQoJ01pc3NpbmcgY2hhbmdlbGlzdCBudW1iZXIuIEFib3J0aW5nLicpOwogICAgZXhpdCgxKTsKfQoKJGNoYW5nZWxpc3QgPSAkYXJnc3ZbMF07CgovLyBDaGVjayBmb3IgUmFrZWZpbGUKaWYgKCFpc19yZWFkYWJsZShfX0RJUl9fIC4gJy9SYWtlZmlsZScpKSB7CiAgICBvdXRwdXQoJ1RoZXJlXCdzIG5vIFJha2VmaWxlIG9uIHRoZSBjdXJyZW50IGRpcmVjdG9yeS4gQWJvcnRpbmcuJyk7CiAgICBleGl0KDMpOwp9CgokbGltaXQgPSAwOwppZiAoJGFyZ3NjID09PSAyKSB7CiAgICAkbGltaXQgPSAkYXJnc3ZbMV07Cn0KCiRyYWtlQ29tbWFuZCA9ICJyYWtlIGZhc3Q6Y29tbWl0W3skY2hhbmdlbGlzdH1dIjsKCi8vIFN0YXJ0IG9ic2Vzc2l2ZSBhdHRlbXB0cwpvdXRwdXQoIkluc2lzdGluZyBvbiBjb21taXR0aW5nIHskY2hhbmdlbGlzdH0uLi4iKTsKJHRyaWVzID0gMDsKJGV4aXRDb2RlID0gMDsKCndoaWxlICgkZXhpdENvZGUgIT09IDEpIHsKICAgICR0cmllcysrOwogICAgJGV4aXRDb2RlID0gcnVuKCRyYWtlQ29tbWFuZCk7CiAgCiAgICBpZiAoJGxpbWl0ID09PSAkdHJpZXMpIHsKICAgICAgICBicmVhazsKICAgIH0KfQoKJHRyaWVzLS07CgpvdXRwdXQoCiAgICBhcnJheSgKICAgICAgICAnJywKICAgICAgICAiRmluYWxseSEgSXQgdG9vayB7JHRyaWVzfSBhdHRlbXB0cyB0byBjaGVjayB7JGNoYW5nZWxpc3R9IGluLiIsCiAgICAgICAgJ05vdyBoZWFkIHRvIHRvIHRoYXQgQ0kgc2VydmVyIGFuZCBtYWtlIGl0IGdvIGdyZWVuIScsCiAgICAgICAgJycKICAgICkKKTs=
+</attribute>
+        <relationship name="snippet" type="1/1" destination="SNIPPET" idrefs="z196"></relationship>
     </object>
 </database>
